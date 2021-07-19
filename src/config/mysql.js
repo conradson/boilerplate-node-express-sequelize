@@ -10,7 +10,7 @@ const config = {
 }
 const connection = mysql.createPool(config)
 
-connection.getConnection((err, connection) => {
+connection.getConnection((err) => {
   if (err) {
     console.error(err)
   } else {

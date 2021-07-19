@@ -1,4 +1,4 @@
-const connection = require('../config/db')
+const connection = require('../config/mysql')
 
 const findAll = () => {
   return new Promise((resolve, reject) => {
