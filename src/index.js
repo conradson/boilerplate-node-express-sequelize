@@ -12,8 +12,7 @@ app.use(
 
 app.use('/', routes)
 
-const { SERVER_PORT } = process.env
-
-app.listen(SERVER_PORT, () => {
-  console.log(`Connected, listen on port ${SERVER_PORT}`)
+const port = process.env.SERVER_PORT || 8000
+app.listen(port, () => {
+  console.log(`Connected, listen on port ${port}`)
 })
