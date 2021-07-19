@@ -5,11 +5,13 @@ const {
   findOne,
   search,
   create,
+  update,
 } = require('../controllers/controller.sample')
 
 router.get('/', findAll)
 router.get('/:id', findOne)
 router.get('/search/:query', search)
 router.post('/', create)
+router.put('/:id', update)
 
 module.exports = router
