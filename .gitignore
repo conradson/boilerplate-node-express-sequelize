@@ -4,3 +4,6 @@ package-lock.json
 
 # Environment varibales
 .env
+
+# Database
+database.sqlite
